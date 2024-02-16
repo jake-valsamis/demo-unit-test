@@ -10,7 +10,7 @@ class TestCircleArea(unittest.TestCase):
         self.assertAlmostEqual(circle_area(2.1), pi * 2.1**2)
     
     def test_values(self):
-        # Make sure value errors are raised when they should be
+        # Make sure value errors are raised when necessary
         self.assertRaises(ValueError, circle_area, -2)
     
     def test_types(self):
@@ -18,4 +18,3 @@ class TestCircleArea(unittest.TestCase):
         self.assertRaises(TypeError, circle_area, 3+5j)
         self.assertRaises(TypeError, circle_area, True)
         self.assertRaises(TypeError, circle_area, "radius")
-        
